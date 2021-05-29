@@ -7,6 +7,8 @@ namespace WebApplication1
 {
     public class Mutation
     {
+
+        //TODO: use input type as parameter or configure descriptor to make non-null parameter
         public async Task<Book> Book
             ([Service] BookDbContext dbContext, string title, int pages, string author, int chapters)
         {
